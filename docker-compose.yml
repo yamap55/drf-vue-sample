@@ -12,5 +12,5 @@ services:
     container_name: workspace-cnt
     ports:
       # Liver Server
-      - "8080:8080"
-      - "8000:8000"
+      - "18080:18080"
+      - "18000:18000"
