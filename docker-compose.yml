@@ -1,0 +1,16 @@
+version: "3"
+services:
+  drf-vue-sample:
+    build:
+      context: .
+      args:
+        WORKDIR: /workspace
+    volumes:
+      - .:/workspace
+      - /workspace/frontend/node_modules
+    image: workspace-img
+    container_name: workspace-cnt
+    ports:
+      # Liver Server
+      - "8080:8080"
+      - "8000:8000"
